@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<link href="css/namoro.css" rel="stylesheet">       
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">n
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	<title>EU TE AMO</title>  
+</head>
+<body> 
+    <header>
+		<h1>selecione uma imagem</h1>
+	</header> 
+	
+	<div class="container">
+		<div class="gallery">
+			<a href="texto1.html">
+            <img src="https://cdn.discordapp.com/attachments/887590560704110592/1101323350111948861/IMG_20230427_224525_767.jpg" alt="Imagem 1" >  
+            </a>
+			 <a href="texto3.html">
+			<img src="https://cdn.discordapp.com/attachments/887590560704110592/1101323356264992799/IMG_20230427_224522_748.jpg" alt="Imagem 2" > 
+		</a>  
+		<a href="texto2.html">
+			<img  src="https://cdn.discordapp.com/attachments/887590560704110592/1101323363881848922/IMG_20230427_224520_902.jpg"  alt="Imagem 3" ></a>
+	</div>
+	<script>
+		function selectImage(num) {
+			var images = document.querySelectorAll(".gallery img");
+			for (var i = 0; i < images.length; i++) {
+				images[i].classList.remove("selected");
+			}
+			images[num-1].classList.add("selected");
+		}
+	</script>
+	
+</body>
+</html>
+ 
